@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>音乐播放页面</title>
+<style type="text/css">
+	*{
+		margin: 0;padding: 0;
+	}
+	#box-video{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+	}
+	#box-video video{
+		min-width: 100%;
+		min-height: 100%;
+		max-width: 4000%;
+		max-height: 4000%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -1350px;
+		margin-top: -540px;
+	}
+	.cd{
+		width: 422px;
+		height: 422px;
+		position: absolute;
+		top: 25%;
+		left: 10%;
+		z-index: 2;
+		border-radius: 50%;
+		border: 10px solid #FFF;
+		box-shadow: 5px 5px 15px #000;
+		background: url(images/cd_img.jpg)no-repeat;
+
+	}
+	.center{
+		width: 100px;
+		height: 100px;
+		background-color: #000;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -50px;
+		margin-top: -50px;
+		z-index: 3;
+		border: 5px solid #FFF;
+		background-image: url(images/yinfu.gif);
+		background-position: center ;
+		background-repeat: no-repeat;
+	}
+	.song{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+
+	}
+	h2{
+		font-size: 110px;
+		color: #913805;
+	}
+	p{
+		width: 556px;
+		height: 300px;
+		font-family: "微软雅黑"
+		padding-left:30px;
+		line-height: 30px;
+		box-sizing: border-box;
+	}
+</style>
+</head>
+<body>
+	<div id="box-video">
+		<video src="video/mailang.webm" autoplay="autoplay" loop="loop">浏览器不支持video标签</video>
+		<div class="cd">
+			<div class="center"></div>
+		</div>
+		<div class="song">
+			<h2>风中的麦浪</h2>
+			<p>爱过的地方 <br/> 当微风带着收获的味道<br/>吹向我脸庞<br/>想起你轻柔的话语<br/>曾打湿我的眼眶<br/>嗯。。。。。。啦。。。。。。嗯。。。。。。啦。。。。。。<br/>我们曾在田野里唱歌<br/>在冬季盼望<br/>却没能等到阳光下</p>
+			<audio src="music/1.mp3"></audio>
+		</div>
+	</div>
+</body>
+</html>

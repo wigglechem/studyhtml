@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>语义标签兼容</title>
+
+
+<script>
+document.createElement("footer")
+document.createElement("header")
+document.createElement("section")
+</script>
+
+    <style type="text/css">
+        header{
+            width:200px;
+            height:200px;
+            display:block;
+
+            background-color:red;
+        }
+        section{
+            width:150px;
+            height:150px;
+            background-color:yellow;
+            display:block;
+        }
+        footer{
+            width:200px;
+            height:200px;
+            display:block;
+            background-color:gold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<header id="header" class="">
+    header
+</header><!-- /header -->
+<section>
+section
+</section>
+<footer>
+    footer
+</footer>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>360校园</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+</head>
+<style>
+ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { 
+margin:0; padding:0; 
+}
+body { 
+background:#fff; 
+color:#555;
+font-size:14px;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+td,th,caption { 
+font-size:14px; 
+}
+h1, h2, h3, h4, h5, h6 { 
+font-weight:normal; 
+font-size:100%; 
+}
+address, caption, cite, code, dfn, em, strong, th, var { 
+font-style:normal; 
+font-weight:normal;
+}
+a { 
+color:#555; 
+text-decoration:none; 
+}
+a:hover { 
+text-decoration:underline; 
+}
+img { 
+border:none; 
+}
+ol,ul,li { 
+list-style:none; 
+}
+input, textarea, select, button { 
+font:14px Verdana,Helvetica,Arial,sans-serif; 
+}
+table { 
+border-collapse:collapse; 
+}
+html {
+overflow-y: scroll;
+} 
+
+.clearfix:after {
+content: "."; 
+display: block; 
+height:0; 
+clear:both; 
+visibility: hidden;
+}
+.clearfix { 
+*zoom:1; 
+}
+/*初始化*/
+body{
+    background: url(env-bg.png) fixed;
+    background-size: cover;
+}
+.header{
+    height: 112.5px;
+    background: url(header-bg.png);
+}
+.header .header-wrap{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header .header-wrap .header-top{
+    color: white;
+    text-align: right;
+    line-height: 45px;
+}
+.header.header-wrap .header-top a{
+    color: #c0cfcf；
+    text-decoration:none; 
+}
+.header .header-wrap .header-top span{
+    margin: 0 22px;
+}
+.header .header-wrap .header-top a:hover{
+    color: yellow;
+    text-decoration: underline;
+
+}
+.header .header-wrap .header-nav{
+    height: 68px;
+}
+.header .header-wrap .header-nav .nave-loge{
+    display: block;
+    height: 65px;
+    width: 200px;
+    float: left;
+}
+.header .header-wrap .header-nav ul{
+    float: left;
+}
+.header .header-wrap .header-nav li{
+    padding: 0 24px;
+    line-height: 65px;
+    font-size: 20px;
+    float: left;
+
+}
+.header .header-wrap .header-nav li a{
+    text-decoration: none;
+    color: #808080;
+}
+.header .header-wrap .header-nav li a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.nav-bottom{
+    width: 1000px;
+    height: 51px;
+    background: #5baae3;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+}
+.nav-bottom a{
+    color: white;
+    text-decoration: none;
+}
+.nav-bottom a:hover{
+    color: yellow;
+}
+.nav-bottom span{
+     margin: 0 10px;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+}
+.content li{
+    float: left;
+    width: 240px;
+    margin: 0 5px;
+}
+.content .content-1{
+    color:#808080;
+    padding:18px;
+    background-color: #f0b49c;
+}
+.content .content--1{
+    height: 300px;
+    color:#808080;
+    padding:18px;
+    margin-top: 5px;
+    background-color: #f0b49c;
+}
+.li-1:hover .content-1 .pic1{
+    background: url(job-cate.png);
+    background-position: 0 -190px;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+}
+.content li .pic1{
+    background: url(job-cate.png);
+    background-position: 0 0;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+}
+
+.content .content-2{
+    color:#808080;
+    padding:15px 15px 1px 15px;
+    background-color: #9dced4;
+}
+.content .content--2{
+    height: 300px;
+    color:#808080;
+    padding:18px;
+    margin-top: 5px;
+    background-color: #9dced4;
+}
+.li-2:hover .content-2 .pic2{
+    background: url(job-cate.png);
+    background-position: -135px -190px;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+}
+.content li .pic2{
+    background: url(job-cate.png);
+    background-position: -135px 0;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+}
+
+.content .content-3{
+    color:#808080;
+    padding:18px;
+    background-color: #e3ce73;
+}
+.content .content--3{
+    height: 300px;
+    color:#808080;
+    padding:18px;
+    margin-top: 5px;
+    background-color:#e3ce73;
+    }
+.li-3:hover .content-3 .pic3{
+    background: url(job-cate.png);
+    background-position: -270px -190px;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+    }
+.content li .pic3{
+    background: url(job-cate.png);
+    background-position: -270px 0;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+}
+
+.content .content-4{
+    color:#808080;
+    padding:18px;
+    background-color: #bdde6d;
+}
+.content .content--4{
+    height: 300px;
+    color:#808080;
+    padding:18px;
+    margin-top: 5px;
+    background-color:#bdde6d;
+    }
+.li-4:hover .content-4 .pic4{
+    background: url(job-cate.png);
+    background-position: -405px -190px;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+    }
+.content li .pic4{
+    background: url(job-cate.png);
+    background-position: -405px 0;
+    width: 135px;
+    height: 189px; 
+    margin: 15px auto;
+}
+</style>
+    <body>
+    	<div class="header">
+    		<div class="header-wrap">
+    			<div class="header-top">
+    				<a href="#">社会招聘</a><span>|</span>
+    				<a href="#">官方微博</a><span>|</span>
+    				<span>欢迎来到校园招聘！</span>
+
+    			</div>
+    			<div class="header-nav">
+    				<a class="nave-loge" href="#">
+    					<img src="logo.png">
+    				</a>
+    				<ul>
+    					<li><a href="#">首页</a></li>
+    					<li><a href="#">校园招聘</a></li>
+    					<li><a href="#">360开发实验室</a></li>
+    					<li><a href="#">校园活动</a></li>
+    					<li><a href="#">关于360</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="nav-bottom">
+    		<a href="#">应届毕业生</a>
+    		<span>|</span>
+
+    		<a href="#">实习生招聘</a>
+    		<span>|</span>
+
+    		<a href="#">招聘流程</a>
+    		<span>|</span>
+
+            <a href="#">关于笔面试</a>
+    		<span>|</span>
+
+            <a href="#">校园宣讲</a>
+    		<span>|</span>
+
+    		<a href="#">FAQ</a>
+    		
+    	</div>
+
+    	<div class="content">
+    		<ul>
+    			<li class="li-1">
+    				<div class="content-1">
+    					<div class="pic1"></div>
+    					<h1>
+    						<center>程序猿</center>
+    					</h1>
+    					<p>代码是我的天我的地，我不但做得了阳光宅男，也做得了无敌“跑男”</p>
+
+    				</div>
+
+    				<div class="content--1">
+    					<p>程序猿实习生招聘敬请期待</p>
+    				</div>
+    			</li>
+    			<li class="li-2">
+ 				<div class="content-2">
+ 					<div class="pic2"></div>
+ 					<h1>
+ 						<center>产品汪</center>
+ 					</h1>
+ 					<p>我思维睿智，执着又不失可爱，我即是像亚里士多德一样的理论家，又是像老周一样的实战派！</p>
+ 				</div>
+ 				<div class="content--2">
+ 					<p>产品汪实习生招聘敬请期待</p>
+ 				</div>
+ 			</li>
+ 			<li class="li-3">
+ 				<div class="content-3">
+ 					<div class="pic3"></div>
+ 					<h1>
+ 						<center>设计狮</center>
+ 					</h1>
+ 					<p>我骨子里透着倔强，潮范又“擅变”，我不仅做得了另类人，更做得了魔法狮！</p>
+ 				</div>
+ 				<div class="content--3">
+ 					<p>设计狮实习生招聘敬请期待</p>
+ 				</div>
+ 			</li>
+ 			<li class="li-4">
+ 			<div class="content-4">
+ 					<div class="pic4"></div>
+ 					<h1>
+ 						<center>职能喵</center>
+ 					</h1>
+ 					<p>我为人民服务，温柔而细心，女生都是知心姐姐，男生都是暖心欧巴！</p>
+ 				</div>
+ 				<div class="content--4">
+ 					<p>职能喵实习生招聘敬请期待</p>
+ 				</div>
+ 			</li>
+    		</ul>
+    		<div class="clear"></div>
+    	</div>
+    </body>
+</html>

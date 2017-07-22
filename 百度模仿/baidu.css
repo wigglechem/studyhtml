@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+#header{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin:19px 0 5px;
+    padding: 0 96px 0 0;
+}
+
+#header a{
+	color: #333;
+}	
+#header a:hover{
+	color: blue;
+}
+
+ .login{
+ 	list-style: none;
+	float: left;
+	/*font-weight: 700;*/
+	line-height: 24px;
+	margin-left: 20px;
+	font-size: 13px;
+	text-decoration: under1;
+
+ }
+ #find{
+ 	position: relative;
+ 	outline: 0;
+ 	border:0;
+ }
+ .header{
+   list-style: none;
+	float: left;
+	font-weight: 700;
+	line-height: 24px;
+	margin-left: 20px;
+	font-size: 13px;
+	text-decoration: under1;
+ }
+ #more{
+ 	position: absolute;
+ 	right: 10px;
+ 	width: 60px;
+ 	height: 23px;
+ 	float: left;
+ 	color: #fff;
+ 	background: #38f;
+ 	line-height: 24px;
+ 	font-size: 13px;
+ 	text-align: center;
+ 	overflow: hidden;
+ 	border-bottom: 1px solid #38f;
+ 	margin-left: 19px;
+ 	margin-right: 2px;
+ }
+ #main{
+ 	height: 190px;
+ 	display: block;
+ 	position: relative;
+ 	top: 120px;
+ 	margin-bottom: 415px;
+ }
+ #img{
+
+   margin:0 auto;
+   text-align: center;
+ }
+ #img img{
+    width: 270px;
+    height: 129px;
+ }
+ 
+ 
+ 
+#search{
+	text-align: center;
+	margin-top: 25px;
+}
+#one{
+	height: 35.8px;
+	width: 540px;
+	border:1px solid grey;
+	display: inline-block;
+	text-align: left;
+}
+#two{
+	height: 36.8px;
+	width: 100px;
+	border:0;
+	background: #3385ff;
+	color: white;
+	font-weight: 600;
+	font-size: 15px;
+	display: inline-block;
+
+}
+#one input{
+	height: 22px;
+	margin: 7px 0 0 7px;
+	width: 500px;
+	border:0;
+	font-size: 15px;
+}
+#two input{
+	height: 37.8px;
+	width: 100px;
+	border:0;
+	background: #3385ff;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+
+	
+}
+#xiangji{
+	height: 16px;
+	width: 18px;
+	float: right;
+	margin: 10px 7px 0 0;
+}
+#xiangji a{
+	height: 16px;
+	width: 18px;
+	background-image: url(camera.png);
+	float: right;
+	position: absolute;
+	
+}
+#xiangji a:hover{
+	background-image: url(camera.png);
+	background-position-y:18px; 
+}
+#footer{
+	height: 200px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+#shouji{
+	text-align: center;
+	font-size: 12px;
+	color:#666;
+	font-weight: 400px;
+}
+#footerone{
+	text-align: center;
+	margin-top:25px;
+	font-size: 12px;
+	line-height: 22px;
+	
+	
+}
+#lineone a {
+	color: #999;
+	margin-left: 25px;
+
+
+}
+#linetwo{
+	color: #999
+
+}
+#linetwo a{
+	text-align: center;
+	color: #999;
+}
+#end{
+display: inline-block;
+background-image: url(footer.png);
+background-position: -600px -96px;
+width: 14px;
+height: 17px;
+position: relative;
+top: 3px;
+overflow: hidden;
+
+
+}
+#endtwo{
+	display: inline-block;
+background-image: url(footer.png);
+background-position: -623px -96px;
+width: 14px;
+height: 17px;
+position: relative;
+top: 3px;
+overflow: hidden;
+}
+
