@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>兼容性 li缝隙</title>
+    <style type="text/css">
+        .list{
+            margin:0;
+            padding:0;
+            list-style:none;
+            width:300px;
+
+        }
+        .list li{
+            height:30px;
+            border:1px solid red;
+            line-height:30px;
+            *vertical-align:top
+
+        }/* 解决方案 */
+        .list li a{
+            float:left;
+
+        }
+        .list li span{
+            float:right;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="list">
+    <li>
+        <a href="">左边</a>
+        <span>右边</span>
+    </li>
+    <li>
+        <a href="">左边</a>
+        <span>右边</span>
+    </li>
+    <li>
+        <a href="">左边</a>
+        <span>右边</span>
+    </li>
+    <li>
+        <a href="">左边</a>
+        <span>右边</span>
+    </li>
+
+</ul>
+</body>
+</html>

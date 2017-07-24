@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>兼容性 </title>
+    <style type="text/css">
+        .box{
+            width:400px;
+
+        }
+        .left{
+            float:left;
+        }
+        .right{
+            width:397px;
+            float:right;
+        }
+
+
+    </style>
+    <!--两个浮动元素中间有注释或者内联元素 并且和父级宽度不超过3像素
+    解决方案 两个浮动元素中间避免出现注释和内联元素-->
+</head>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <span></span> <!--IE下文字溢出bug-->
+    <div class="right">&darr;这是多出来的一只猪</div>
+</div>
+</body>
+</html>
