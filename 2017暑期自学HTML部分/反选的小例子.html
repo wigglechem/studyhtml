@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>反选的小例子</title>
+    <script type="text/javascript">
+         window.onload=function(){
+            var oinp = document.getElementsByTagName('input');
+            oinp[0].onclick=function(){
+                for(var i = 1;i<oinp.length;i++){
+                    if(oinp[i].checked){
+                        oinp[i].checked = false;
+                    }else {
+                        oinp[i].checked = true;
+                    }
+                }
+            }
+         }
+
+
+
+
+    </script>
+</head>
+<body>
+<input type="button" name="" value="反选">
+<ul>
+    <li><input type="checkbox" name=""></li>
+    <li><input type="checkbox" name=""></li>
+    <li><input type="checkbox" name=""></li>
+    <li><input type="checkbox" name=""></li>
+</ul>
+</body>
+</html>
