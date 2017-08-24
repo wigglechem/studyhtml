@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>文本伪类1</title>
+    <style type="text/css">
+p{
+    width:300px;
+    border:1px solid black;
+    font:12px/30px "宋体";
+    padding:10px;
+    }
+p:first-line{
+    background:red;
+}
+p:first-letter{
+    background:blue;
+    font-size:30px;
+}
+p::selection{
+    background:pink;
+    color:orange;
+}
+p:before{
+    content:"作者：陈zw";
+}
+p:after{
+    content:"the end";display:block;
+}
+
+
+    </style>
+</head>
+<body>
+<p>在今年的高考中，安徽籍盲人考生王宠以高出一本线88分的成绩被东北师范大学数学系录取。读数学系，大学毕业后当数学老师，一直以来都是王宠的梦想。但对王宠来说，考上大学只是迈出了梦想的第一步。
+其实，王宠并不是国内盲人被高校录取的第一人。2015年起，国家向盲人考生提供普通高考盲文试卷，三年来已有多位盲生参加高考并被高校录取。2015年，宁夏籍盲人考生黄莺被武汉理工大学社会工作专业录取，浙江籍考生郑荣权被温州大学思想政治教育专业录取。据看看新闻Knews记者了解，黄莺在报到后正常入住了学生宿舍，学校还特意为黄莺的床铺四周加装了防撞条。此外，为了解决黄莺日常外出的需要，学校特意安排了结对志愿者，并专门配备了一辆电动车。
+</p>
+</body>
+</html>

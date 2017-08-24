@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>css3 属性选择器6</title>
+    <style type="text/css">
+        p{
+            height:30px;
+            border:1px solid pink;
+        }
+        p[zhiwei|=b]{
+            background:yellowgreen; /* 有指定的字母就可以 */
+        }
+    </style>
+</head>
+<body>
+<p zhiwei="b-martin">哈哈</p>
+<p zhiwei="b-steven">拉拉</p>
+<p zhiwei="b">么么</p>
+<p zhiwei="g-alice">哄哄</p>
+</body>
+</html>

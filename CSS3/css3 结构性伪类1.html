@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>css3 结构性伪类1</title>
+    <style type="text/css">
+        p{
+            height:30px;
+            border:1px solid #000;
+        }
+        p:nth-child(2){background:red;}
+        p:nth-child(odd){background:red;}
+        p:nth-child(2n){background:red;}
+        body *:nth-child(2){background:blue;}
+        body *:nth-last-child(2){background:blue;}
+        p:nth-of-type(2n){background:red;}
+
+
+    </style>
+    <!--
+
+        奇数行 用 odd
+
+        偶数行 用 even
+
+        还可以用n来进行计算 功能强大
+
+        要注意 找到的是p标签 下的孩子
+
+        如果想找第二个子节点，不管它是什么标签，用body *:
+        nth-last-child(2) 从后往前数
+
+        first-child == nth-child(1)
+
+        last-child == nth-last-child(1)
+
+    -->
+</head>
+<body>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<p>p4</p>
+<p>p5</p>
+
+</body>
+</html>

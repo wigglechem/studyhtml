@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>css3 属性选择器3</title>
+    <style type="text/css">
+        p{
+            height:30px;
+            border:1px solid pink;
+        }
+        p[zhiwei^=b]{
+            background:yellowgreen; /* 指定了属性名开头 */
+        }
+    </style>
+</head>
+<body>
+<p zhiwei="ahaha old">哈哈</p>
+<p zhiwei="alala">拉拉</p>
+<p zhiwei="ameme">么么</p>
+<p zhiwei="bhonghong">哄哄</p>
+</body>
+</html>

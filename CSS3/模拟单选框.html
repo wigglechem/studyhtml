@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>模拟单选框</title>
+    <style type="text/css">
+       label{
+        float:left;
+        margin:0 5px;
+        overflow:hidden;
+        position:relative;
+       }
+
+       label input{
+
+       }
+       span{
+        float:left;
+        width:50px;
+        height:50px;
+        border:3px solid black;
+       }
+       input:checked~span{background:red;}
+
+
+    </style>
+</head>
+<body>
+<label>
+<input type="radio" name="tab" value="">
+<span></span>
+</label>
+<label>
+<input type="radio" name="tab" value="">
+<span></span>
+</label>
+<label>
+<input type="radio" name="tab" value="">
+<span></span>
+</label>
+</body>
+</html>
