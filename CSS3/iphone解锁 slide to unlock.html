@@ -15,14 +15,31 @@
             color:rgba(255, 255, 255, 0.3);
             background:-webkit-linear-gradient(-30deg,rgba(255, 255, 255, 0.0) 100px,rgba(255, 255, 255, 1.0) 180px,rgba(255, 255, 255, 1.0) 240px,rgba(255, 255, 255, 0.0) 300px) no-repeat -300px 0;
             -webkit-background-clip:text;
-            transition:5s;
+
         }
-        body:hover h1{
-            background-position:1000px 0;
-        }
+
     </style>
 </head>
 <body>
 <h1>Slide to unlock </h1>
+<script type="text/javascript">
+     var oH1 = document.getElementsByTagName('h1')[0];
+     var oTimer = null;
+     var iLeft = -300;
+     function toMove(){
+        oTimer=setInterval(function(){
+            iLeft+=10;
+            oH1.style.backgroundPosition=iLeft+"px 0px";
+            if (iLeft==1000) {
+                iLeft=-300;
+                clearInterval(oTimer);
+            };
+        },20);
+     }
+     toMove();
+     setInterval(function(){
+        toMove()
+     },5000);
+</script>
 </body>
 </html>
