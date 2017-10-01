@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>扇形导航</title>
+    <style type="text/css">
+body{background:#f9f9f9;}
+#menu{
+    width:50px;
+    height:50px;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+}
+#menu_list{
+    height:42px;
+    width:42px;
+    position:relative;
+    margin:4px;
+}
+#menu_list img{
+    border-radius:21px;
+    position:absolute;
+    left:0;
+    top: 0;
+    -webkit-transition: 0.5s all ease;
+}
+#home{
+    width:50px;
+    height:50px;
+    background:url('sxdh/home.png') no-repeat;
+    border-radius:25px;
+    position:absolute;
+    left:0;
+    top: 0;
+    transition:1s;
+}
+
+
+    </style>
+    <script type="text/javascript">
+         window.onload=function()
+         {
+            var oHome=document.getElementById("home");
+            var aImg=document.getElementById("menu_list").getElementsByTagName("img");
+            var bOff=true;/* 点一下顺时针转，再点一下逆时针转 */
+            var iR=-150;
+
+            oHome.onclick=function(){
+                if (bOff) {
+                    this.style.WebkitTransform="rotate(-360deg)";
+                    for(var i = 0;i<aImg.length;i++)
+                    {
+                       var oLt=toLT(iR,90/4*i)
+                       aImg[i].style.transition="0.5s "+i*100+"ms";
+                       aImg[i].style.left=oLt.l+"px";
+                       aImg[i].style.top=oLt.t+"px";
+
+
+                    }
+                }else
+                {
+                    this.style.WebkitTransform="rotate(360deg)";
+                }
+                bOff=!bOff;
+            }
+         }
+         function toLT(iR,iDeg){
+           /* var iLeft=Math.round(Math.sin(iDeg/180*PI)*iR); */
+            /* var iTop=Math.round(Math.cos(iDeg/180*PI)*iR); */
+            return{
+                l:Math.round(Math.sin(iDeg/180*Math.PI)*iR),t:Math.round(Math.cos(iDeg/180*Math.PI)*iR)
+            }
+         }
+    </script>
+</head>
+<body>
+<div id="menu">
+    <div id="menu_list">
+        <img src="sxdh/prev.png" alt="">
+        <img src="sxdh/open.png" alt="">
+        <img src="sxdh/clos.png" alt="">
+        <img src="sxdh/full.png" alt="">
+        <img src="sxdh/refresh.png" alt="">
+    </div>
+
+    <div id="home"></div>
+
+</div>
+</body>
+</html>
